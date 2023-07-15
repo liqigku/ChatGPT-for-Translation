@@ -224,7 +224,7 @@ def parse_arguments():
     options = parser.parse_args()
     OPENAI_API_KEY = options.openai_key or os.environ.get("OPENAI_API_KEY")
     if not OPENAI_API_KEY:
-        raise Exception("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")
+        raise Exception("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")
     if options.use_azure:
         assert options.azure_endpoint is not None and options.azure_endpoint != '', "--azure_endpoint is required when use Azure"
         assert options.azure_deployment_name is not None and options.azure_deployment_name, "--azure_deployment_name is required when use Azure"
